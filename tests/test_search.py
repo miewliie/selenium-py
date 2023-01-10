@@ -1,6 +1,13 @@
-""" Test DuckDuckGo Searches """
+""" Test DuckDuckGo Searches 
 
-# `test` always start name with test as python will look for it.
+-`test` always start name with test as pytest will look for it.
+- Anytime pytest see word `test` with an argument `e.g browser`
+- it will check arg name available on fixture `conftet.py` file
+- And pass in whatever return for this arg `browser` to execute 
+command in the test, once done it will return to conftest.py to quit. 
+
+"""
+
 def test_basicduckduckgo_search(browser):
 
     # Given the DuckDuckGo home page is displayed
