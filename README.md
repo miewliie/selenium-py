@@ -26,3 +26,10 @@ Documentation in my versions:
 10. Try to run test
     1. `pipenv run python -m pytest`
     2. If able to open chrome. Mean that the driver set up correctly.
+11. Note: 
+    1. Please manual install pylint `pip3 install pylint` at your terminal.
+    2. DO NOT let VScode install for you.
+    3. It locator directory might go wrong. Causing lint can’t import.
+12. Use `pytest-xdist` to run test in pararell `pipenv install pytest-xdist`
+13. To run it in parallel after install `pytest-xdist`.
+    1. Run ``pipenv run python -m pytest -n ${number of thread that you want it to run}` 
