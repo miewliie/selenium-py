@@ -32,4 +32,4 @@ Documentation in my versions:
     3. It locator directory might go wrong. Causing lint can’t import.
 12. Use `pytest-xdist` to run test in pararell `pipenv install pytest-xdist`
 13. To run it in parallel after install `pytest-xdist`.
-    1. Run ``pipenv run python -m pytest -n ${number of thread that you want it to run}` 
+    1. Run `pipenv run python -m pytest -n ${number of thread that you want it to run}` 
