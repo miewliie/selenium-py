@@ -14,14 +14,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.11.1
+    - name: Set up Python 3.7
       uses: actions/setup-python@v3
       with:
-        python-version: "3.11.1"
-    - name: Install dependencies
+        python-version: "3.7"
+    - name: Install pipenv
       run: |
-        pip3 install pipenv
+        python -m pip install --upgrade pipenv wheel
+    - name: Install Selenium
+      run: |
         pipenv install selenium
+    - name: Install pytest
+      run: |
         pipenv install pytest
     - name: Test with pytest
       run: |
