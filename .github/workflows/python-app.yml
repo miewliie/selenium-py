@@ -23,10 +23,10 @@ jobs:
         python -m pip install --upgrade pipenv wheel
     - name: Install Selenium
       run: |
-        pip3 install selenium
+        pipenv install selenium
     - name: Install pytest
       run: |
-        pip3 install pytest
+        pipenv install pytest
     - name: Test with pytest
       run: |
         pipenv run python -m pytest
